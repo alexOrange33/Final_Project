@@ -9,3 +9,22 @@ string[] GetString(string text)
     return array;
 }
 
+string[] GetArray(string[] array)
+{
+    int count = 0;
+    int j = 0;
+    foreach(var item in array)
+    {
+        if(item.Length<=3) count++;
+    }
+    string[] result = new string[count];
+    for(int i = 0;i<array.Length;i++)
+    {
+        if(array[i].Length<=3)
+        {
+            result[j] = array[i];
+            j++;
+        }
+    }
+    return result;
+}
