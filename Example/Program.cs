@@ -28,3 +28,8 @@ string[] GetArray(string[] array)
     }
     return result;
 }
+
+void PrintArray(string[] array)
+{
+    System.Console.Write($"[{String.Join(",", array)}]");
+}
