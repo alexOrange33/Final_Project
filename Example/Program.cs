@@ -1,6 +1,9 @@
 ﻿System.Console.WriteLine("Введите строки через ','");
 string text = Console.ReadLine()!;
 string[] array = GetString(text);
+PrintArray(array);
+System.Console.Write(" -> ");
+PrintArray(GetArray(array));
 
 //------------metods----------
 string[] GetString(string text)
