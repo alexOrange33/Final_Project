@@ -1,10 +1,17 @@
-﻿System.Console.WriteLine("Введите строки через ','");
+﻿string exit = String.Empty;
+while(exit != "exit")
+{
+System.Console.WriteLine("Введите строки через ','");
 string text = Console.ReadLine()!;
 string[] array = GetString(text);
 PrintArray(array);
 System.Console.Write(" -> ");
 PrintArray(GetArray(array));
-
+System.Console.WriteLine();
+System.Console.WriteLine("Для выхода из программы наберите 'exit', для продолжения нажмите клавишу 'Enter' ");
+exit = Console.ReadLine()!;
+Console.Clear();
+}
 //------------metods----------
 string[] GetString(string text)
 {
